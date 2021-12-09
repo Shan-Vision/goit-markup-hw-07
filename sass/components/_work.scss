@@ -1,0 +1,44 @@
+.work-title {
+  color: var(--title-text-color);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.16;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.section.work {
+  padding-top: 0;
+}
+.work-list {
+  display: flex;
+  justify-content: space-between;
+
+    & .work-item + .work-item {
+        margin-left: 30px;
+    }
+}
+
+.work-item {
+  position: relative;
+}
+.work-overlay-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  bottom: 0;
+  left: 0;
+
+  background-color: var(--work-overlay-bgc-color);
+}
+.work-overlay-caption {
+  font-weight: bold;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--primary-white-color);
+}

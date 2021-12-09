@@ -1,0 +1,29 @@
+
+.container-logo .logo {
+  padding: 0;
+  margin-bottom: 20px;
+}
+.address-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address-contact {
+  font-style: normal;
+
+  color: var(--footer-contact-color);
+  transition: color 250ms var(--timing-function);
+  text-decoration: none;
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.address-destination {
+  display: block;
+  margin-bottom: 9px;
+  color: var(--primary-white-color);
+  line-height: 1.71;
+  font-style: normal;
+}
