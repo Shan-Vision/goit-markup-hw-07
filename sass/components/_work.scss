@@ -1,4 +1,4 @@
-.work-title {
+.work__title {
   color: var(--title-text-color);
   font-size: 36px;
   font-weight: 700;
@@ -6,22 +6,23 @@
   text-align: center;
   margin-bottom: 50px;
 }
-.section.work {
+.work {
   padding-top: 0;
 }
-.work-list {
+.work__list {
   display: flex;
+  
   justify-content: space-between;
 
-    & .work-item + .work-item {
+    & .work__item + .work__item {
         margin-left: 30px;
     }
 }
 
-.work-item {
+.work__item {
   position: relative;
 }
-.work-overlay-box {
+.overlay__box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,7 +35,7 @@
 
   background-color: var(--work-overlay-bgc-color);
 }
-.work-overlay-caption {
+.overlay__caption {
   font-weight: bold;
   line-height: 1.14;
   letter-spacing: 0.03em;
