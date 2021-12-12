@@ -1,36 +1,30 @@
-
 .nav {
   margin-left: 93px;
 }
-.nav-list {
-  display: flex;
+.nav__list {
+  @include list(flex, null, null, null, null, null, null);
 
-  & .nav-item + .nav-item {
-        margin-left: 50px;
-        }
+  & .nav__item + .nav__item {
+    @include item(null, null, 50px, null, null, null, null)
+  }
 }
 
-.nav-link {
+.nav__link {
   position: relative;
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
 
-  color: var(--title-text-color);
+  @include font(Roboto, 14px, 500, 1.4, 0.02em, var(--title-text-color), null, none)
+  @include transition(color,null, null, var(--time), var(--timing-function));
 
-  font-weight: 500;
-  line-height: 1.4;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-
-  transition: color 250ms var(--timing-function);
 
    &:hover, &:focus{
-        color: var(--accent-color);
-    }
+    color: var(--accent-color);
+  }
 }
 
-.nav-link.curent {
+.nav__link--curent {
     color: var(--accent-color);
     
     &::after {

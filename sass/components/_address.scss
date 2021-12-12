@@ -1,13 +1,10 @@
 
-.container-logo .logo {
-  padding: 0;
-  margin-bottom: 20px;
-}
-.address-item:not(:last-child) {
+
+.address__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.address-contact {
+.address__contact {
   font-style: normal;
 
   color: var(--footer-contact-color);
@@ -20,7 +17,7 @@
     }
 }
 
-.address-destination {
+.address__destination {
   display: block;
   margin-bottom: 9px;
   color: var(--primary-white-color);

@@ -1,0 +1,47 @@
+.card__list {
+  @include list(flex, wrap, -30px, -30px, null, null, null);
+}
+
+.card__items {
+  @include item(var(--gap), var(--gap), null, null, null, 3, var(--gap));
+}
+
+.card__body {
+  position: relative;
+  overflow: hidden;
+}
+
+.card__link {
+  text-decoration: none;
+  display: block;
+
+  transition: box-shadow 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.card-block__text {
+  color: var(--primary-text-color);
+
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+.card-block__title {
+  color: var(--title-text-color);
+
+  font-size: 18px;
+  line-height: 2;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+.card-block {
+  padding: 20px 24px;
+  border: 1px solid var(--content-border-color);
+  border-top: 0;
+}

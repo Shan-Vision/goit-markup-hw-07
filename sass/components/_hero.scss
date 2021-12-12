@@ -1,11 +1,12 @@
-.section.main {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  text-align: center;
+.hero {
   max-width: 1600px;
   height: 600px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+
 
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url('../images/background.jpg');
@@ -15,32 +16,26 @@
   background-color: var(--header-bgc-color);
 }
 
-.main-title {
+.hero__title {
   width: 696px;
-  margin: 0 auto;
-  color: var(--primary-white-color);
-  font-size: 44px;
-  font-weight: 900;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-.main-button {
-  display: inline-block;
-  margin-top: 30px;
-  margin-left: auto;
+  margin-top: 0;
   margin-right: auto;
+  margin-bottom: 30px;
+  margin-left: auto; 
+}
+
+.large {
+  @include font(Roboto, 44px, 900, 1.36, 0.06em, var(--primary-white-color), uppercase, null);
+}
+
+.hero__button {
+  @include list(inline-block, null, auto, null, auto, null, null);
+
   padding: 10px 32px;
 
-  color: var(--primary-white-color);
   background-color: var(--accent-color);
-
-  font-family: Roboto, sans-serif;
-  font-weight: 700;
-  line-height: 1.87;
-  font-size: 16px;
-  letter-spacing: 0.06em;
   border-style: none;
   cursor: pointer;
   border-radius: 4px;
+  @include font( Roboto, 16px, 700, 1.87, 0.06em, var(--primary-white-color), null, null);
 }

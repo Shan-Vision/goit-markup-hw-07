@@ -1,25 +1,19 @@
+//-------------Header//
 .logo {
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
-  text-decoration: none;
-  line-height: 1.2;
-  color: var(--accent-color);
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
+  @include font(Raleway, 26px, 700, 1.2, 0.03em, var(--accent-color), null, none);
 }
-.logo-primary {
-  color: var(--logo-primary-color);
-
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
+.logo__primary {
+  @include font(Raleway, 26px, 700, 1.2, 0.03em, var(--logo-primary-color), null, null);
 }
-.logo-secondary {
-  color: var(--primary-white-color);
+//---------------Footer//
 
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
+.logo__secondary {
+  @include font(Raleway, 26px, 700, 1.2, 0.03em, var(--primary-white-color), null, null);
+}
+.logo_container .logo {
+  padding: 0;
+  margin-bottom: 20px;
 }

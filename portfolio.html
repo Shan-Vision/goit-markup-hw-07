@@ -14,200 +14,202 @@
 <body>
       <!-- Верхняя шапка -->
       <header class="header">
-         <div class="container head">
-         <a href="./index.html" rel="noopener noreferrer" class="logo" lang="en">Web<span class="logo-primary">Studio</span></a>
-         <nav class="nav">
-            <ul class="nav-list">
-               <li class="nav-item"><a class="nav-link" href="./index.html">Студия</a></li>
-               <li class="nav-item"><a class="nav-link curent" href="./portfolio.html">Портфолио</a></li>
-               <li class="nav-item"><a class="nav-link" href="">Контакты</a></li>
-            </ul>
-         </nav>
-            <ul class="contact-list">
-               <li class="contact-item">
-                  <a class="contact-link" href="mailto:info@devstudio.com"> <svg class="icon-contact">
-                     <use href="./images/icons-svg/symbol-defs.svg#icon-mail-icon" ></use>
-                  </svg>info@devstudio.com</a>
+         <div class="container container--flex">
+            <a href="./index.html" rel="noopener noreferrer" class="logo" lang="en">Web<span
+                  class="logo__primary">Studio</span></a>
+            <nav class="nav">
+               <ul class="nav__list">
+                  <li class="nav__item"><a class="nav__link" href="./index.html">Студия</a></li>
+                  <li class="nav__item"><a class="nav__link nav__link--curent" href="./portfolio.html">Портфолио</a></li>
+                  <li class="nav__item"><a class="nav__link" href="">Контакты</a></li>
+               </ul>
+            </nav>
+            <ul class="contact">
+               <li class="contact__item">
+                  <a class="contact__link" href="mailto:info@devstudio.com"><svg class="contact__icon">
+                        <use href="./images/icons-svg/symbol-defs.svg#icon-mail-icon"></use>
+                     </svg>info@devstudio.com</a>
                </li>
-               <li class="contact-item">
-                  <a class="contact-link" href="tel:+380961111111"><svg class="icon-contact">
-                     <use href="./images/icons-svg/symbol-defs.svg#icon-phone-icon" ></use>
-                  </svg>+38 096 111 11 11</a>
+               <li class="contact__item">
+                  <a class="contact__link" href="tel:+380961111111"><svg class="contact__icon">
+                        <use href="./images/icons-svg/symbol-defs.svg#icon-phone-icon"></use>
+                     </svg>+38 096 111 11 11</a>
                </li>
             </ul>
          </div>
       </header>
       <main>
          <!-- Верхняя линия -->
-      <section class="section content">
-         <div class="container content">
+      <section class="content section">
+         <div class="container">
             <h1 class="visually-hidden">Портфолио</h1>
-            <ul class="content-primary-list">
-               <li class="content-list">
-                  <button class="content-button curent" type="button">Все</button>
+            <ul class="content__list">
+               <li class="content__items">
+                  <button class="content__button curent" type="button">Все</button>
                </li>
-               <li class="content-list">
-                  <button class="content-button" type="button">Веб-сайты</button>
+               <li class="content__items">
+                  <button class="content__button" type="button">Веб-сайты</button>
                </li>
-               <li class="content-list">
-                  <button class="content-button" type="button">Приложения</button>
+               <li class="content__items">
+                  <button class="content__button" type="button">Приложения</button>
                </li>
-               <li class="content-list">
-                  <button class="content-button" type="button">Дизайн</button>
+               <li class="content__items">
+                  <button class="content__button" type="button">Дизайн</button>
                </li>
-               <li class="content-list">
-                  <button class="content-button" type="button">Маркетинг</button>
+               <li class="content__items">
+                  <button class="content__button" type="button">Маркетинг</button>
                </li>
             </ul>
-            <ul class="content-secondary-list">
-               <li class="wrap-items">
-                  <a href="" class="content-link">
-                     <div class="content-overlay-box">
-                        <img class="content-image" width="370" height="294" src="./images/portfolio-img1-min.jpg" alt="Ноутбук">
-                        <div class="content-overlay">
-                           <p class="content-overlay-caption">
+            <ul class="card__list">
+               <li class="card__items">
+                  <a href="" class="card__link">
+                     <div class="card__body">
+                        <img class="card__image" width="370" height="294" src="./images/portfolio-img1-min.jpg" alt="Ноутбук">
+                        <div class="overlay">
+                           <p class="overlay__caption">
                               Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                               шпионажа и атак на защищённые сервера конкурентов.
                            </p>
                         </div>
                      </div>
-                     <div class="content-block">
-                        <h2 class="content-title">Технокряк</h2>
-                        <p class="content-text">Веб-сайт</p>
+                     <div class="card-block">
+                        <h2 class="card-block__title">Технокряк</h2>
+                        <p class="card-block__text">Веб-сайт</p>
                      </div>
                   </a>
                </li>
-               <li class="wrap-items">
-                  <a href="" class="content-link">
-                     <div class="content-overlay-box">
-                        <img class="content-image" width="370" height="294" src="./images/portfolio-img2-min.jpg" alt="Постер">
-                        <div class="content-overlay">
-                           <p class="content-overlay-caption">
+               <li class="card__items">
+                  <a href="" class="card__link">
+                     <div class="card__body">
+                        <img class="card__image" width="370" height="294" src="./images/portfolio-img2-min.jpg" alt="Постер">
+                        <div class="overlay">
+                           <p class="overlay__caption">
                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore culpa dignissimos vero dicta. Aspernatur eos voluptate dignissimos enim obcaecati ducimus?
                            </p>
                         </div>
                      </div>
-                     <div class="content-block">
-                        <h2 class="content-title">Постер<span lang="en">New Orlean vs Golden Star</span></h2>
-                        <p class="content-text">Дизайн</p>
+                     <div class="card-block">
+                        <h2 class="card-block__title">Постер<span lang="en">New Orlean vs Golden Star</span></h2>
+                        <p class="card-block__text">Дизайн</p>
                      </div>
                   </a>
                </li>
-               <li class="wrap-items">
-                  <a href="" class="content-link">
-                     <div class="content-overlay-box">
-                        <img class="content-image" width="370" height="294" src="./images/portfolio-img3-min.jpg" alt="Ресторан">
-                        <div class="content-overlay">
-                           <p class="content-overlay-caption">
+               <li class="card__items">
+                  <a href="" class="card__link">
+                     <div class="card__body">
+                        <img class="card__image" width="370" height="294" src="./images/portfolio-img3-min.jpg" alt="Ресторан">
+                        <div class="overlay">
+                           <p class="overlay__caption">
                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore culpa dignissimos vero dicta. Aspernatur eos
                               voluptate dignissimos enim obcaecati ducimus?
                            </p>
                         </div>
                      </div>
-                     <div class="content-block">
-                        <h2 class="content-title">Ресторан<span lang="en">Seafood</span></h2>
-                        <p class="content-text">Приложение</p>
+                     <div class="card-block">
+                        <h2 class="card-block__title">Ресторан<span lang="en">Seafood</span></h2>
+                        <p class="card-block__text">Приложение</p>
                      </div>
                   </a>
                </li>
-               <li class="wrap-items">
-                  <a href="" class="content-link">
-                     <div class="content-overlay-box">
-                        <img class="content-image" width="370" height="294" src="./images/portfolio-img4-min.jpg" alt="Наушник">
-                        <div class="content-overlay">
-                           <p class="content-overlay-caption">
+               <li class="card__items">
+                  <a href="" class="card__link">
+                     <div class="card__body">
+                        <img class="card__image" width="370" height="294" src="./images/portfolio-img4-min.jpg" alt="Наушник">
+                        <div class="overlay">
+                           <p class="overlay__caption">
                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore culpa dignissimos vero dicta. Aspernatur eos
                               voluptate dignissimos enim obcaecati ducimus?
                            </p>
                         </div>
                      </div>
-                     <div class="content-block">
-                        <h2 class="content-title">Проект<span lang="en">Prime</span></h2>
-                        <p class="content-text">Маркетинг</p>
+                     <div class="card-block">
+                        <h2 class="card-block__title">Проект<span lang="en">Prime</span></h2>
+                        <p class="card-block__text">Маркетинг</p>
                      </div>
                   </a>
                </li>
-               <li class="wrap-items">
-                  <a href="" class="content-link">
-                     <div class="content-overlay-box">
-                        <img class="content-image" width="370" height="294" src="./images/portfolio-img5-min.jpg" alt="Коробки">
-                        <div class="content-overlay">
-                           <p class="content-overlay-caption">
+               <li class="card__items">
+                  <a href="" class="card__link">
+                     <div class="card__body">
+                        <img class="card__image" width="370" height="294" src="./images/portfolio-img5-min.jpg" alt="Коробки">
+                        <div class="overlay">
+                           <p class="overlay__caption">
                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore culpa dignissimos vero dicta. Aspernatur eos
                               voluptate dignissimos enim obcaecati ducimus?
                            </p>
                         </div>
                      </div>
-                     <div class="content-block">
-                        <h2 class="content-title">Проект<span lang="en">Boxes</span></h2>
-                        <p class="content-text">Приложение</p>
+                     <div class="card-block">
+                        <h2 class="card-block__title">Проект<span lang="en">Boxes</span></h2>
+                        <p class="card-block__text">Приложение</p>
                      </div>
                   </a>
                </li>
-               <li class="wrap-items">
-                  <a href="" class="content-link">
-                     <div class="content-overlay-box">
-                        <img class="content-image" width="370" height="294" src="./images/portfolio-img6-min.jpg" alt="Компьютер">
-                        <div class="content-overlay">
-                           <p class="content-overlay-caption">
+               <li class="card__items">
+                  <a href="" class="card__link">
+                     <div class="card__body">
+                        <img class="card__image" width="370" height="294" src="./images/portfolio-img6-min.jpg" alt="Компьютер">
+                        <div class="overlay">
+                           <p class="overlay__caption">
                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore culpa dignissimos vero dicta. Aspernatur eos
                               voluptate dignissimos enim obcaecati ducimus?
                            </p>
                         </div>
                      </div>
-                     <div class="content-block">
-                        <h2 class="content-title" lang="en">Inspiration has no Borders</h2>
-                        <p class="content-text">Веб-сайт</p>
+                     <div class="card-block">
+                        <h2 class="card-block__title" lang="en">Inspiration has no Borders</h2>
+                        <p class="card-block__text">Веб-сайт</p>
                      </div>
                   </a>
                </li>
-               <li class="wrap-items">
-                  <a href="" class="content-link">
-                     <div class="content-overlay-box">
-                        <img class="content-image" width="370" height="294" src="./images/portfolio-img7-min.jpg" alt="Книга">
-                        <div class="content-overlay">
-                           <p class="content-overlay-caption">
+               <li class="card__items">
+                  <a href="" class="card__link">
+                     <div class="card__body">
+                        <img class="card__image" width="370" height="294" src="./images/portfolio-img7-min.jpg" alt="Книга">
+                        <div class="overlay">
+                           <p class="overlay__caption">
                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore culpa dignissimos vero dicta. Aspernatur eos
                               voluptate dignissimos enim obcaecati ducimus?
                            </p>
                         </div>
                      </div>
-                     <div class="content-block">
-                        <h2 class="content-title">Издание<span lang="en">Limited Edition</span></h2>
-                        <p class="content-text">Дизайн</p>
+                     <div class="card-block">
+                        <h2 class="card-block__title">Издание<span lang="en">Limited Edition</span></h2>
+                        <p class="card-block__text">Дизайн</p>
                      </div>
                   </a>
                </li>
-               <li class="wrap-items">
-                  <a href="" class="content-link">
-                     <div class="content-overlay-box">
-                        <img class="content-image" width="370" height="294" src="./images/portfolio-img8-min.jpg" alt="Бирка">
-                        <div class="content-overlay">
-                           <p class="content-overlay-caption">
+               <li class="card__items">
+                  <a href="" class="card__link">
+                     <div class="card__body">
+                        <img class="card__image" width="370" height="294" src="./images/portfolio-img8-min.jpg" alt="Бирка">
+                        <div class="overlay">
+                           <p class="overlay__caption">
                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore culpa dignissimos vero dicta. Aspernatur eos
                               voluptate dignissimos enim obcaecati ducimus?
                            </p>
                         </div>
                      </div>
-                     <div class="content-block"><h2 class="content-title">Проект<span lang="en">LAB</span></h2>
-                     <p class="content-text">Маркетинг</p>
+                     <div class="card-block">
+                        <h2 class="card-block__title">Проект<span lang="en">LAB</span></h2>
+                     <p class="card-block__text">Маркетинг</p>
                   </div>
                   </a>
                </li>
-               <li class="wrap-items">
-                  <a href="" class="content-link">
-                     <div class="content-overlay-box">
-                        <img class="content-image" width="370" height="294" src="./images/portfolio-img9-min.jpg" alt="Бизнес">
-                        <div class="content-overlay">
-                           <p class="content-overlay-caption">
+               <li class="card__items">
+                  <a href="" class="card__link">
+                     <div class="card__body">
+                        <img class="card__image" width="370" height="294" src="./images/portfolio-img9-min.jpg" alt="Бизнес">
+                        <div class="overlay">
+                           <p class="overlay__caption">
                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore culpa dignissimos vero dicta. Aspernatur eos
                               voluptate dignissimos enim obcaecati ducimus?
                            </p>
                         </div>
                      </div>
-                     <div class="content-block">
-                        <h2 class="content-title" lang="en">Growing Business</h2>
-                        <p class="content-text">Приложение</p>
+                     <div class="card-block">
+                        <h2 class="card-block__title" lang="en">Growing Business</h2>
+                        <p class="card-block__text">Приложение</p>
                      </div>
                   </a>
                </li>
@@ -217,67 +219,67 @@
       </main>
       <!-- Подвал -->
       <footer class="footer">
-         <div class="container container-footer">
-           <div class="container-logo">
-            <a href="./index.html" rel="noopener noreferrer" class="logo" lang="en">Web<span
-               class="logo-secondary">Studio</span></a>
-            <address class="address">
-               <p class="address-destination">г. Киев, пр-т Леси Украинки, 26</p>
-               <ul class="address-list">
-                  <li class="address-item"><a class="address-contact" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                  <li class="address-item"><a class="address-contact" href="tel:+380961111111">+38 096 111 11 11</a></li>
-               </ul>
-            </address>
-           </div>
-           <div class="container-join">
-              <p class="join-title">
-               присоединяйтесь
-              </p>
-              <ul class="join-list">
-                 <li class="join-items">
-                    <a href="" class="join-link"> 
-                     <svg class="icon-join">
-                        <use href="./images/icons-svg/symbol-defs.svg#icon-instagram-icon"></use>
-                     </svg>
-                    </a>
-                  </li>
-                 <li class="join-items">
-                    <a href="" class="join-link">
-                    <svg class="icon-join">
-                       <use href="./images/icons-svg/symbol-defs.svg#icon-twitter-icon" ></use>
-                    </svg>   
+         <div class="container footer--container">
+            <div class="logo_container">
+               <a href="./index.html" rel="noopener noreferrer" class="logo" lang="en">Web<span
+                     class="logo__secondary">Studio</span></a>
+               <address class="address">
+                  <p class="address__destination">г. Киев, пр-т Леси Украинки, 26</p>
+                  <ul class="address__list">
+                     <li class="address__item"><a class="address__contact"
+                           href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                     <li class="address__item"><a class="address__contact" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                  </ul>
+               </address>
+            </div>
+            <div class="join__container">
+               <p class="join__title">
+                  присоединяйтесь
+               </p>
+               <ul class="join__list">
+                  <li class="join__items">
+                     <a href="#" class="join__link">
+                        <svg class="join__icon">
+                           <use href="./images/icons-svg/symbol-defs.svg#icon-instagram-icon"></use>
+                        </svg>
                      </a>
                   </li>
-                 <li class="join-items">
-                    <a href="" class="join-link">
-                     <svg class="icon-join">
-                        <use href="./images/icons-svg/symbol-defs.svg#icon-facebook-icon" ></use>
-                     </svg>                 
-                    </a>
+                  <li class="join__items">
+                     <a href="#" class="join__link">
+                        <svg class="join__icon">
+                           <use href="./images/icons-svg/symbol-defs.svg#icon-twitter-icon"></use>
+                        </svg>
+                     </a>
                   </li>
-                 <li class="join-items">
-                    <a href="" class="join-link">
-                     <svg class="icon-join ">
-                        <use href="./images/icons-svg/symbol-defs.svg#icon-linkedin-icon" ></use>
-                     </svg>                     
-                    </a>
+                  <li class="join__items">
+                     <a href="#" class="join__link">
+                        <svg class="join__icon">
+                           <use href="./images/icons-svg/symbol-defs.svg#icon-facebook-icon"></use>
+                        </svg>
+                     </a>
                   </li>
-              </ul>
-          </div>
-         <div class="container-sign-up">
-            <form action="" class="sugn-up-form">
-               <div class="sign-up-box">
-                  <label for="sign-up-mail" class="sign-up-label">Подпишитесь на рассылку</label>
-                  <input type="email" name="sign-up-mail" id="sign-up-mail" class="sign-up-input" placeholder="E-mail">
-               </div>
-            </form>
-            <div class="sign-up-button">
-               <button type="submit" class="sign-btn">Подписаться<svg class="sign-up-button-icon">
-                     <use href="./images/modal-icon/symbol-defs.svg#icon-sign-up"></use>
-                  </svg></button>
+                  <li class="join__items">
+                     <a href="#" class="join__link">
+                        <svg class="join__icon">
+                           <use href="./images/icons-svg/symbol-defs.svg#icon-linkedin-icon"></use>
+                        </svg>
+                     </a>
+                  </li>
+               </ul>
             </div>
-         
-         </div>
+            <div class="sign-up__container">
+               <form action="" class="sugn-up__form">
+                  <div class="sign-up__box">
+                     <label for="sign-up-mail" class="sign-up__label">Подпишитесь на рассылку</label>
+                     <input type="email" name="sign-up-mail" id="sign-up-mail" class="sign-up__input" placeholder="E-mail">
+                  </div>
+               </form>
+               <div class="button">
+                  <button type="submit" class="button__sign-up">Подписаться<svg class="button__icon">
+                        <use href="./images/modal-icon/symbol-defs.svg#icon-sign-up"></use>
+                     </svg></button>
+               </div>
+            </div>
          </div>
       </footer>
    </body>

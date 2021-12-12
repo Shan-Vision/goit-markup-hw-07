@@ -1,31 +1,22 @@
 .work__title {
-  color: var(--title-text-color);
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.16;
-  text-align: center;
   margin-bottom: 50px;
 }
-.work {
-  padding-top: 0;
+.work{
+@include section(null, 94px);
+
 }
 .work__list {
-  display: flex;
-  
-  justify-content: space-between;
-
-    & .work__item + .work__item {
-        margin-left: 30px;
-    }
+  @include flex(flex, null, null, space-between, null);
+  margin-left: -30px;
 }
 
 .work__item {
   position: relative;
+  margin-left: 30px;
+  flex-basis: calc((100% - 60px) / 3);
 }
 .overlay__box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex(flex, null, null, center, center);
 
   position: absolute;
   width: 100%;
@@ -36,10 +27,5 @@
   background-color: var(--work-overlay-bgc-color);
 }
 .overlay__caption {
-  font-weight: bold;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-
-  color: var(--primary-white-color);
+  @include font(Roboto, 14px, 700, 1.14, 0.03em, var(--primary-white-color), uppercase, null);
 }

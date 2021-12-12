@@ -1,36 +1,28 @@
-.section.team {
+.team {
   background-color: var(--team-bgc-color);
+  @include section(94px, 94px);
 }
 
 .team__title {
-  color: var(--title-text-color);
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.16;
-  text-align: center;
-  margin-bottom: 50px;
-  text-align: center;
   margin-bottom: 50px;
 }
+
 .team-box__caption {
-  color: var(--title-text-color);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.87;
+  @include font(Roboto, 16px, 500, 1.87, 0.03em, var(--title-text-color), null, null);
 }
 .team-box__text {
-  color: var(--primary-text-color);
-  line-height: 1.87;
+  @include font(Roboto, 16px, 400, 1.87, 0.03em, var(--primary-text-color), null, null);
   margin-bottom: 16px;
 }
 .team__list {
-  display: flex;
-
-    & .team__item + .team__item {
-        margin-left: 30px;
-    }
+  @include flex(flex, null, null, null, null);
+  margin-left: -30px;
 }
+
 .team__item {
+  margin-left: 30px;
+  flex-basis: calc((100% - 90px) / 4);
+
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -43,35 +35,33 @@
   border-radius: 0px 0px 4px 4px;
 }
 .team-icon__list {
-  display: flex;
+  @include flex(flex, null, null, null, null);
+  margin-left: -10px;
+}
 
-    & .team-icon__item + .team-icon__item {
-        margin-left: 10px;
-    }
+.team-icon__item{
+  margin-left: 10px;
+  flex-basis: calc((100% - 30px) / 4);
 }
 
 .team-icon__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex(flex, null, null, center, center);
   width: 44px;
   height: 44px;
 
   color: var(--team-icon-color);
 
-  transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function),
-    border-radius 250ms var(--timing-function);
+  @include transition(color, background-color, border-radius, var(--time), var(--timing-function));
 
-    &:hover,
-    &:focus {
-        color: var(--primary-white-color);
-        background-color: var(--accent-color);
-        border-radius: 50%;
-    }
+  &:hover,
+  &:focus {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    border-radius: 50%;
+  }
 }
 .team-icon__icon {
   width: 22px;
   height: 22px;
   fill: currentColor;
 }
-

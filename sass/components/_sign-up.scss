@@ -1,21 +1,14 @@
-.container-sign-up {
+.sign-up__container {
   margin-left: 93px;
-  display: flex;
-  align-items: flex-end;
+  @include flex(flex, null, null, null, flex-end);
   flex-grow: 1;
 }
 
-.sign-up-label {
+.sign-up__label {
   margin-bottom: 20px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.15;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-
-  color: var(--primary-white-color);
+  @include font(Roboto, 14px, 700, 1.15, 0.03em, var(--primary-white-color), uppercase, null);
 }
-.sign-up-input {
+.sign-up__input {
   width: 358px;
   height: 50px;
   padding-left: 16px;
@@ -26,41 +19,34 @@
   background-color: transparent;
   color: var(--primary-white-color);
 }
-.sign-up-box {
-  display: flex;
-  flex-direction: column;
+.sign-up__box {
+  @include flex(flex, column, null, null, null);
+
 }
-.sugn-up-form {
-  display: flex;
+.sugn-up__form {
+  @include flex(flex, null, null, null, null);
   width: 358px;
 }
-.sign-up-button {
+.button {
   margin-left: 12px;
   width: 200px;
   height: 50px;
   color: #ececec;
 }
-.sign-btn {
+.button__sign-up {
   width: 100%;
   height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  @include flex(flex, null, null, center, center);
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  color: var(--primary-white-color);
   background-color: var(--accent-color);
   border-radius: 4px;
   border: none;
   cursor: pointer;
-
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
+  text-align: center;
+  @include font(Roboto, 16px, 700, 1.87, 0.06em, var(--primary-white-color), null, null);
 }
-.sign-up-button-icon {
+.button__icon {
   margin-left: 10px;
   width: 24px;
   height: 24px;

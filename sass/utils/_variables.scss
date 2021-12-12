@@ -18,6 +18,7 @@
   --logo-primary-color: #000000;
   --overflow-bgc-color: rgba(33, 150, 243, 0.9);
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --time: 250ms;
   --work-overlay-bgc-color: rgba(47, 48, 58, 0.8);
   --modal-title-color: #212121;
   --modal-icon-input-color: #212121;
@@ -26,7 +27,11 @@
   --modal-policy-link: #2196f3;
   --modal-button-submit-color: #ffffff;
   --modal-checkbox-border-color: #212121;
+  --main-font: Roboto, sans-serif;
+  --second-font: Raleway, sans-serif;
+  --gap: 30px;
 }
+
 
 li {
   list-style: none;
@@ -50,17 +55,25 @@ ul {
   display: inline-block;
   padding-left: 0;
 }
-.logo,
-.features,
-.work,
-.team,
-.client,
-.content-item .content-button,
-.content-text,
-.address-destination,
-.content-overlay-caption {
-  letter-spacing: 0.03em;
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
 }
+// .logo,
+// .features,
+// .work,
+// .team,
+// .client,
+// .content-item .content-button,
+// .content-text,
+// .address-destination,
+// .content-overlay-caption {
+//   letter-spacing: 0.03em;
+// }
 
 .visually-hidden {
   position: absolute;
@@ -77,6 +90,7 @@ ul {
 
 body {
   background-color: var(--primary-white-color);
+
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
   font-size: 14px;
@@ -90,4 +104,12 @@ body {
 
 .section {
   padding: 94px 0px;
+}
+
+.title {
+  color: var(--title-text-color);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.16;
+  text-align: center;
 }

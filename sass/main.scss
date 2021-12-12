@@ -1,35 +1,26 @@
-@import './utils/variables.scss';
+//utils
+@import './utils/variables';
+@import './utils/mixin';
 
-@import './components/_header.scss';
+//components
+@import './components/header';
 @import './components/logo';
-@import './components/_nav.scss';
-@import './components/_contact-header.scss';
-@import './components/_hero.scss';
-@import './components/_features.scss';
-@import './components/_work.scss';
-@import './components/_team.scss';
-@import './components/_client.scss';
-@import './components/_backdrop.scss';
-@import './components/_modal.scss';
-@import './components/_content-overlay.scss';
-@import './components/_content-primary-list.scss';
-@import './components/_content-secondary-list.scss';
-@import './components/_footer.scss';
-@import './components/_container-logo.scss';
-@import './components/_container-join.scss';
-@import './components/_container-sign-up.scss';
-
-
-
-
-
-
-
-
-
-
-
-
+@import './components/nav';
+@import './components/contact-header';
+@import './components/hero';
+@import './components/features';
+@import './components/work';
+@import './components/team';
+@import './components/client';
+@import './components/overlay';    //portfolio//
+@import './components/content';    //portfolio//     
+@import './components/card';       //portfolio//   
+@import './components/footer';
+@import './components/address';
+@import './components/join';
+@import './components/sign-up';
+@import './components/backdrop';  //modal//
+@import './components/modal';     //modal//
 
 
 

@@ -1,6 +1,6 @@
 .header {
   border-bottom: 1px solid var(--header-border-color);
 }
-.container.head {
-  display: flex;
+.container--flex {
+  @include flex(flex, null, null, null, null);
 }
