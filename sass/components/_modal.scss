@@ -44,15 +44,14 @@
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   outline: none;
+  @include transition(border-color, null, null, var(--time), var(--timing-function));
 
-  transition: border-color 250ms var(--timing-function);
-
-  &:focus {
-    border-color: var(--accent-color);
-  }
-  &:focus + .form__icon-svg {
-    fill: var(--accent-color);
-  }
+    &:focus {
+      border-color: var(--accent-color);
+    }
+    &:focus + .form__icon-svg {
+      fill: var(--accent-color);
+    }
 }
 .form__label {
   display: block;
@@ -73,7 +72,7 @@
 
   resize: none;
   outline: none;
-  transition: border-color 250ms var(--timing-function);
+  @include transition(border-color, null, null, var(--time), var(--timing-function));
 
   &:focus {
     border-color: var(--accent-color);
@@ -95,7 +94,9 @@
   width: 13px;
   height: 13px;
   fill: currentColor;
-  transition: fill 250ms var(--timing-function);
+
+  @include transition(fill, null, null, var(--time), var(--timing-function));
+
 }
 
 /**------------------------- Checkbox */
@@ -125,8 +126,7 @@
   border-radius: 2px;
   margin-right: 8px;
 
-  transition: background-color 250ms var(--timing-function),
-    border-color 250ms var(--timing-function);
+  @include transition(background-color, border-color, null, var(--time), var(--timing-function));
 
   .form__input-policy:focus + .form__policy-text &,
   .form__input-policy:hover + .form__policy-text & {
@@ -187,7 +187,7 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
 
-  transition: color 250ms var(--timing-function);
+  @include transition(color, null, null, var(--time), var(--timing-function));
 
   &:hover,
   &:focus {

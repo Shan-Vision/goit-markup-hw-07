@@ -26,6 +26,7 @@
 
   background-color: var(--work-overlay-bgc-color);
 }
-.overlay__caption {
+.overlay__text {
   @include font(Roboto, 14px, 700, 1.14, 0.03em, var(--primary-white-color), uppercase, null);
+  
 }

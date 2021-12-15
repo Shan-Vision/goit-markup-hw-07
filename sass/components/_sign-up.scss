@@ -1,7 +1,7 @@
 .sign-up__container {
-  margin-left: 93px;
+  margin-left: auto;
   @include flex(flex, null, null, null, flex-end);
-  flex-grow: 1;
+
 }
 
 .sign-up__label {
@@ -23,9 +23,9 @@
   @include flex(flex, column, null, null, null);
 
 }
-.sugn-up__form {
-  @include flex(flex, null, null, null, null);
-  width: 358px;
+.sign-up__form {
+  @include flex(flex, null, null, null, flex-end);
+
 }
 .button {
   margin-left: 12px;
