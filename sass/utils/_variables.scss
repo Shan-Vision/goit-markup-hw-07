@@ -32,12 +32,13 @@
   --gap: 30px;
 }
 
-
 li {
   list-style: none;
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 h1,
@@ -63,17 +64,6 @@ input:-webkit-autofill:active {
   transition: background-color 5000s ease-in-out 0s;
   -webkit-box-shadow: 0 0 0px 1000px #fff inset;
 }
-// .logo,
-// .features,
-// .work,
-// .team,
-// .client,
-// .content-item .content-button,
-// .content-text,
-// .address-destination,
-// .content-overlay-caption {
-//   letter-spacing: 0.03em;
-// }
 
 .visually-hidden {
   position: absolute;
@@ -90,26 +80,20 @@ input:-webkit-autofill:active {
 
 body {
   background-color: var(--primary-white-color);
-
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
   font-size: 14px;
 }
 
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-.section {
-  padding: 94px 0px;
-}
-
 .title {
-  color: var(--title-text-color);
-  font-size: 36px;
   font-weight: 700;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
   text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+  }
 }

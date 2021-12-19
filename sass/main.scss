@@ -1,6 +1,11 @@
 //utils
 @import './utils/variables';
 @import './utils/mixin';
+@import './utils/breakpoints';
+@import './utils/container';
+@import './utils/sections';
+
+
 
 //components
 @import './components/header';

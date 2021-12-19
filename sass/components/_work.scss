@@ -1,9 +1,13 @@
 .work__title {
   margin-bottom: 50px;
 }
-.work{
-@include section(null, 94px);
-
+.work {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 0;
+  }
 }
 .work__list {
   @include flex(flex, null, null, space-between, null);
@@ -28,5 +32,4 @@
 }
 .overlay__text {
   @include font(Roboto, 14px, 700, 1.14, 0.03em, var(--primary-white-color), uppercase, null);
-  
 }
